@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ma page d'accueil — Raccourcis</title>
+  <style>
+    :root{--bg:#0f1720;--card:#0b1220;--muted:#9aa4b2}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#e6eef6;background:linear-gradient(180deg,#071025 0%,#0b1420 100%);min-height:100vh;display:flex;align-items:center;justify-content:center}
+    .container{width:min(1100px,94%);padding:28px}
+    h1{margin:0 0 18px;font-size:20px;font-weight:600;text-align:center}
+
+    .cards{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+    .card{background:rgba(255,255,255,0.03);border-radius:14px;padding:14px;display:flex;flex-direction:column;align-items:center;text-decoration:none;transition:transform .12s ease, box-shadow .12s;box-shadow:0 4px 12px rgba(2,6,23,0.6)}
+    .card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(2,6,23,0.7)}
+    .favicon{width:56px;height:56px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:10px}
+    .favicon img{width:100%;height:100%;object-fit:cover}
+    .label{font-size:14px;color:#e6eef6;text-align:center;max-width:100%;word-break:break-word}
+    .sub{font-size:12px;color:var(--muted);margin-top:6px}
+
+    @media (max-width:900px){.cards{grid-template-columns:repeat(4,1fr)} }
+    @media (max-width:700px){.cards{grid-template-columns:repeat(2,1fr)} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mes raccourcis</h1>
+
+    <div class="cards">
+      <a class="card" href="https://www.youtube.com/?hl=fr&gl=FR" target="_blank" rel="noopener noreferrer">
+        <div class="favicon"><img src="https://www.google.com/s2/favicons?sz=128&domain=youtube.com" alt="yt"></div>
+        <div class="label">YouTube</div>
+        <div class="sub">youtube.com</div>
+      </a>
+
+      <a class="card" href="https://www.twitch.tv/directory/following" target="_blank" rel="noopener noreferrer">
+        <div class="favicon"><img src="https://www.google.com/s2/favicons?sz=128&domain=twitch.tv" alt="twitch"></div>
+        <div class="label">Twitch — Following</div>
+        <div class="sub">twitch.tv</div>
+      </a>
+
+      <a class="card" href="https://www.op.gg/summoners/euw/YoRHa%20ZeroTwo%20B%20-EUW" target="_blank" rel="noopener noreferrer">
+        <div class="favicon"><img src="https://www.google.com/s2/favicons?sz=128&domain=op.gg" alt="opgg"></div>
+        <div class="label">OP.GG — YoRHa ZeroTwo</div>
+        <div class="sub">op.gg</div>
+      </a>
+
+      <a class="card" href="https://porofessor.gg/live/euw/YoRHa%20ZeroTwo%20B%20-EUW" target="_blank" rel="noopener noreferrer">
+        <div class="favicon"><img src="https://www.google.com/s2/favicons?sz=128&domain=porofessor.gg" alt="porofessor"></div>
+        <div class="label">Porofessor — Live</div>
+        <div class="sub">porofessor.gg</div>
+      </a>
+
+      <a class="card" href="https://www.primevideo.com/region/fr/ref=av_auth_return_redir" target="_blank" rel="noopener noreferrer">
+        <div class="favicon"><img src="https://www.google.com/s2/favicons?sz=128&domain=primevideo.com" alt="prime"></div>
+        <div class="label">Prime Video (FR)</div>
+        <div class="sub">primevideo.com</div>
+      </a>
+
+
+      <a class="card" href="https://www.nautiljon.com/membre/vu,imajhination,anime.html" target="_blank" rel="noopener noreferrer">
+        <div class="favicon"><img src="https://www.google.com/s2/favicons?sz=128&domain=nautiljon.com" alt="nautiljon"></div>
+        <div class="label">Nautiljon — profil</div>
+        <div class="sub">nautiljon.com</div>
+      </a>
+
+      <a class="card" href="https://v3.voiranime.com/" target="_blank" rel="noopener noreferrer">
+        <div class="favicon"><img src="https://www.google.com/s2/favicons?sz=128&domain=v3.voiranime.com" alt="voiranime"></div>
+        <div class="label">Voiranime v3</div>
+        <div class="sub">v3.voiranime.com</div>
+      </a>
+
+      <a class="card" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+        <div class="favicon"><img src="https://www.google.com/s2/favicons?sz=128&domain=twitter.com" alt="twitter"></div>
+        <div class="label">Twitter</div>
+        <div class="sub">twitter.com</div>
+      </a>
+
+      <a class="card" href="https://anime-sama.fr/" target="_blank" rel="noopener noreferrer">
+        <div class="favicon"><img src="https://www.google.com/s2/favicons?sz=128&domain=anime-sama.fr" alt="anime-sama"></div>
+        <div class="label">Anime-sama</div>
+        <div class="sub">anime-sama.fr</div>
+      </a>
+
+      <a class="card" href="https://www.tiktok.com/fr/" target="_blank" rel="noopener noreferrer">
+        <div class="favicon"><img src="https://www.google.com/s2/favicons?sz=128&domain=tiktok.com" alt="tiktok"></div>
+        <div class="label">TikTok (FR)</div>
+        <div class="sub">tiktok.com</div>
+      </a>
+
+    </div>
+
+  </div>
+</body>
+</html>
